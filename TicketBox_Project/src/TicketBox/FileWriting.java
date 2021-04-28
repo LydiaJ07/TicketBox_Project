@@ -25,7 +25,7 @@ public class FileWriting {
 
 	public void headerWrite() throws IOException {
 		if (fileExistence == false) {
-			String header = "날씨,권종,연령구분,수량,가격,우대사항\n";
+			String header = "날짜,권종,연령구분,수량,가격,우대사항\n";
 			fw.write(header);
 		} 
 	}

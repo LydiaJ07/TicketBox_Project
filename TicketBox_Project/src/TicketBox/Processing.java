@@ -82,7 +82,7 @@ public class Processing {
 	public void DefineAgeType(ChangingVal Val) {
 		if (Val.Man_Age >= cv.SeniorMinAge) {
 			Val.AgeType = 1;
-			Val.AgeType_str = "노인";
+			Val.AgeType_str = "경로";
 		} else if (Val.Man_Age >= cv.AdultMinAge) {
 			Val.AgeType = 2;
 			Val.AgeType_str = "어른";

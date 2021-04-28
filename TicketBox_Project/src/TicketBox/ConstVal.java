@@ -14,7 +14,7 @@ public class ConstVal {
 	
 	//Ticket Price by age type and entry time
 	final static int[] DayPrice = {44000, 56000, 47000, 44000, 0};
-	final static int[] NightPrice = {37000, 46000, 4000, 37000, 0};
+	final static int[] NightPrice = {37000, 46000, 40000, 37000, 0};
 
 	//Discount rate
 	final static double Discount_Disabled = 0.6;
