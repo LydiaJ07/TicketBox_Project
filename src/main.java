@@ -16,27 +16,22 @@ public class main {
 
 			while (true) {
 				//Ticket Type
-				input.TicketTypeInput(Val);
-				input.IDNumberInput(Val);
-				input.PurchasingCount(Val);
-				input.DiscountTypeInput(Val);
-				
-				proc.DefineTicketType(Val);
-				proc.CalculatingAge(Val);
-				proc.DefineAgeType(Val);
-				proc.CalculatingPrice(Val);
-				
-				proc.recording(Val);
+
+				//taking all needed information from the user at once
+				//using the method InputAll(requires four inputs)
+				input.UserInput(Val);
+
+				//calculate and print the ticket price based on user input
+				proc.PriceCal(Val);
 
 				int countinue = input.ContinueInput();
-
 				if (countinue == 2) {
 					output.TotalResultPrint(Val);
 					fw.FileWrite(Val);
 					break;
 				}
-				
 			}
+
 			int restart = input.RestartInput();
 			if (restart == 2) {
 				fw.fileClose(); 

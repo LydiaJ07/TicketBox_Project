@@ -6,6 +6,13 @@ public class Input {
 	Scanner scanner = new Scanner(System.in);
 	Output output = new Output();
 
+	public void UserInput(ChangingVal Val) {
+		TicketTypeInput(Val);
+		IDNumberInput(Val);
+		AmountInput(Val);
+		DiscountTypeInput(Val);
+	}
+
 	public void TicketTypeInput(ChangingVal Val) {
 		while (true) {
 			System.out.println("권종을 선택하세요.");
@@ -29,7 +36,7 @@ public class Input {
 		} 
 	}
 
-	public void PurchasingCount(ChangingVal Val) {
+	public void AmountInput(ChangingVal Val) {
 		while (true) {
 			System.out.println("몇 개를 주문하시겠습니까? (최대 10개)");
 			Val.Amount = scanner.nextInt();

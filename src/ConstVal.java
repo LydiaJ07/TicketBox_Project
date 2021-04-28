@@ -13,8 +13,8 @@ public class ConstVal {
 	final static int BabyMaxAge = 2; //baby 1~2
 	
 	//Ticket Price by age type and entry time
-	final static int[] DayPrice = {56000, 47000, 44000, 44000, 0};
-	final static int[] NightPrice = {46000, 4000, 37000, 37000, 0};
+	final static int[] DayPrice = {44000, 56000, 47000, 44000, 0};
+	final static int[] NightPrice = {37000, 46000, 4000, 37000, 0};
 
 	//Discount rate
 	final static double Discount_Disabled = 0.6;
