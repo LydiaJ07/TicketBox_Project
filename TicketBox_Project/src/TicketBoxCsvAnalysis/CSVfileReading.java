@@ -15,7 +15,7 @@ public class CSVfileReading {
 	public static printAnalysis print;
 	
 	CSVfileReading() throws FileNotFoundException {
-		file = new File("C:\\Users\\정소영\\Desktop\\입장권 판매 기록.csv");
+		file = new File("입장권 판매 기록.csv");
 		br = new BufferedReader(new FileReader(file));
 		
 		print = new printAnalysis();

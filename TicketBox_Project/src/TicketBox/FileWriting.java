@@ -11,7 +11,7 @@ public class FileWriting {
 	boolean fileExistence;
 
 	public FileWriting() throws IOException {
-		File file = new File("C:\\Users\\정소영\\Desktop\\입장권 판매 기록.csv");
+		File file = new File("입장권 판매 기록.csv");
 
 		if (file.exists() == false) fileExistence = false;
 		else fileExistence = true;
