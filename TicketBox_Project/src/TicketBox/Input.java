@@ -19,6 +19,7 @@ public class Input {
 			System.out.println("1. 주간권");
 			System.out.println("2. 야간권");
 			Val.TicketType = scanner.nextInt();
+			scanner.nextLine();
 
 			if (Val.TicketType == 1 || Val.TicketType == 2) break;
 			else output.ErrorMsg();
@@ -28,7 +29,6 @@ public class Input {
 	public void IDNumberInput(ChangingVal Val) {
 		while (true) {
 			System.out.println("주민번호를 입력하세요");
-			scanner.nextLine();
 			Val.IDnumber = scanner.nextLine();
 
 			if (Val.IDnumber.length() == 13) break;
@@ -41,7 +41,7 @@ public class Input {
 			System.out.println("몇 개를 주문하시겠습니까? (최대 10개)");
 			Val.Amount = scanner.nextInt();
 
-			if (Val.Amount > 0 || Val.Amount < 11) break;
+			if (Val.Amount > 0 && Val.Amount < 11) break;
 			else output.ErrorMsg();
 		} 
 	}
@@ -57,7 +57,7 @@ public class Input {
 			System.out.println("5. 임산부");
 			Val.DiscountType = scanner.nextInt();
 
-			if (Val.DiscountType > 0 || Val.DiscountType < 5) break;
+			if (Val.DiscountType > 0 && Val.DiscountType < 5) break;
 			else output.ErrorMsg();
 		}
 	}
